@@ -1,0 +1,29 @@
+{
+  "name": "localtest",
+  "version": "1.0.0",
+  "description": "This is a test.",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "debug": "^2.2.0",
+    "express": "^4.14.0",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-live-server": "^0.0.30",
+    "gulp-tsc": "^1.2.3",
+    "gulp-tslint": "^6.1.1",
+    "gulp-util": "^3.0.7",
+    "jade": "^1.11.0",
+    "morgan": "^1.7.0",
+    "run-sequence": "^1.2.2",
+    "tiny-lr": "^0.2.1",
+    "tslint": "^3.15.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sohunjug",
+  "license": "ISC"
+}
