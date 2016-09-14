@@ -9,6 +9,6 @@ export class Login implements Template {
         this.name = template;
     }
     public index(req: Request, res: Response, next: NextFunction) {
-        res.json({"success": true, "returnmsg": "", "returndata": {"sessionid": "8A"}});
+        res.json({"success": true, "returnmsg": "", "returndata": {"sessionid": "86F2A"}});
     }
 }

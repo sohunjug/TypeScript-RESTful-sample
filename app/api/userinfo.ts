@@ -10,6 +10,11 @@ export class UserInfo implements Template {
     }
     public index(req: Request, res: Response, next: NextFunction) {
         //render page
-        res.json({"results":1,"rows":[{"employee_no":"00369","realname":"胡文琦","idcard":"","phone":"18688989717","login_name":"huwq"}]});
+        console.log(req.body);
+        if (req.body["exeid"] === "M0020EQ001") {
+            res.json({"results":1,"rows":[{"employee_no":"0039","now_dowork_locations":"深圳"}]});
+        } else {
+            res.json({"results":1,"rows":[{"employee_no":"0036","idcard":""}]});
+        }
     }
 }

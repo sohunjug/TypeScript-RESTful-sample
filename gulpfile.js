@@ -21,7 +21,7 @@ gulp.task('serve', () => {
 })
 
 gulp.task('watch', () => {
-    var server = gls.new('build/www.js');
+    var server = gls('build/www.js', {env: {NODE_ENV: 'development'}}, 12345);
     server.start();
     gulp.watch(['app/**/*.ts'], () => seq('tslint', 'clean', 'build'));
     gulp.watch(['build/**/*.js', 'build/**/*.css', 'build/**/*.html'], file =>
